@@ -13,8 +13,8 @@
 
     <!-- CSS only -->
     <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
-    
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
+
     <!-- Importar o Bootstrap -->
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <!-- Importar o Font Awesome -->
@@ -24,7 +24,7 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}">SISEMP</a>
+            <a class="navbar-brand" href="#">SISEMP</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -33,10 +33,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Página Principal</a>
+                        <a class="nav-link" aria-current="page" href="{% url 'home' %}">Página Principal</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'consultaPessoa' %}">Pessoas</a>
+                        <a class="nav-link active" href="{% url 'consultaPessoa' %}">Pessoas</a>
 
                     </li>
                     <li class="nav-item dropdown">
@@ -63,19 +63,75 @@
     <main role="main">
 
         <!-- Principal jumbotron, para a principal mensagem de marketing ou call to action -->
-        <div class="jumbotron">
+        <div class="jumbotron3">
             <div class="container">
-                <h1 class="display-3">Bem-vindo ao Sistema </h1>
-                <p>A Sala do Empreendedor é um local de atendimento na Prefeitura Municipal de Rio Claro,
-                    com objetivo de fazer orientações sobre negócios, abertura e/ou formalização de empresas,
-                    consultas de viabilidade, orientações sobre declaração anual, impressão das guias de
-                    pagamento, dentre outros serviços exclusivos aos Microempreendedores Individuais (MEI).
-                </p>
+                <hr class="mb-4">
+                <hr class="mb-4">
+                <h1 class="display-3">Consulta</h1>
 
                 <body class="bg-light" cz-shortcut-listen="true">
 
+                    <div class="container">
+                        <div class="py-5 text-center">
+                            <!--<img class="d-block mx-auto mb-4" src="img/empreendedor.jpg" alt="" width="100" height="100">-->
+                            <img class="d-block mx-auto mb-4" src="{% static 'img/empreendedor.jpg' %}" alt=""
+                                width="100" height="100">
+                            <h2>Consultar Pessoa</h2>
+
+                            <form class="needs-validation" novalidate="">
+                                <div class="py-5 text-center">
 
 
+                                    <hr class="mb-4">
+
+                                    <table class="table">
+                                        <tr>
+                                            <th>Nome</th>
+                                            <th>CPF</th>
+                                            <th>Data</th>
+                                            <th>E-mail</th>
+                                            <th>Telefone</th>
+                                            <th>CEP</th>
+                                            <th>Cidade</th>
+                                            <th>Estado</th>
+                                            <th>País</th>
+                                            {% for campo in object_list %}
+                                        <tr>
+                                            <td>{{ campo.nome }}</td>
+                                            <td>{{ campo.cpf }}</td>
+                                            <td>{{ campo.data }}</td>
+                                            <td>{{ campo.email }}</td>
+                                            <td>{{ campo.telefone }}</td>
+                                            <td>{{ campo.cep }}</td>
+                                            <td>{{ campo.cidade }}</td>
+                                            <td>{{ campo.estado }}</td>
+                                            <td>{{ campo.pais }}</td>
+                                    
+                                        </tr>
+                                    
+                                        {% empty %}
+                                        <tr>
+                                    
+                                            <td colspan="3">Nenhuma pessoa cadastrada.</td>
+                                        </tr>
+                                    
+                                        {% endfor %}
+                                    
+                                    
+                                        </tr>
+                                    </table>
+                                
+                            </form>
+
+
+
+                            <hr class="mb-4">
+                            <form action="{% url 'cadastraPessoa' %}">
+                                <button class="btn btn-primary btn-lg btn-block" type="submit">Cadastrar</button>
+                            </form>
+                        </div>
+
+                    </div>
 
 
                     <div class="row">
@@ -155,46 +211,7 @@
 
     </main>
 
-    <div class="container">
-        <!-- Exemplo de linha de colunas -->
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Notícias</h2>
-                <p>Durante a inauguração da Sala do Empreendedor, na manhã desta segunda-feira (21), no Paço Municipal,
-                    o prefeito
-                    Gustavo
-                    Perissinotto destacou que o governo municipal quer resgatar o desenvolvimento econômico...</p>
-                <p><a class="btn btn-secondary"
-                        href="https://www.gruporioclarosp.com.br/2021/06/21/prefeito-gustavo-perissinotto-inaugura-sala-do-empreendedor/"
-                        role="button">Ver detalhes
-                        &raquo;</a></p>
-            </div>
-            <div class="col-md-4">
-                <h2>Notícias</h2>
-                <p>A partir deste mês ficará mais fácil abrir empresas em Rio Claro e regularizar atividades que estão
-                    na
-                    informalidade. A
-                    prefeitura entrega no próximo dia 21 a Sala do Empreendedor, que também terá...</p>
-                <p><a class="btn btn-secondary" href="https://imprensa.rioclaro.sp.gov.br/?p=63929" role="button">Ver
-                        detalhes
-                        &raquo;</a></p>
-            </div>
-            <div class="col-md-4">
-                <h2>Notícias</h2>
-                <p>Rio Claro deverá contar em breve com nova ferramenta de auxílio aos empreendedores do município. A
-                    Secretaria
-                    de
-                    Governo, Desenvolvimento Econômico e Planejamento irá implantar a Sala do Empreendedor, em
-                    parceria... </p>
-                <p><a class="btn btn-secondary" href="https://imprensa.rioclaro.sp.gov.br/?p=41425" role="button">Ver
-                        detalhes
-                        &raquo;</a></p>
-            </div>
-        </div>
 
-        <hr>
-
-    </div>
 
 
 
@@ -204,67 +221,6 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
-    <style>
-        .footer,
-        .generic-footer {
-            margin-bottom: 98px
-        }
-
-        @media (min-width:374px) {
-
-            .footer,
-            .generic-footer {
-                margin-bottom: 78px
-            }
-        }
-
-        @media (min-width:546px) {
-
-            .footer,
-            .generic-footer {
-                margin-bottom: 56px
-            }
-        }
-
-        @media (min-width:1055px) {
-
-            .footer,
-            .generic-footer {
-                margin-bottom: 0
-            }
-        }
-
-        .disclaimer {
-            position: fixed;
-            z-index: 9999999;
-            bottom: 0;
-            right: 0;
-            border-top: 2px solid #ff5c62;
-            text-align: center;
-            font-size: 14px;
-            font-weight: 400;
-            background-color: #fff;
-            padding: 5px 10px 5px 10px
-        }
-
-        .disclaimer a:hover {
-            text-decoration: underline
-        }
-
-        @media (min-width:1052px) {
-            .disclaimer {
-                text-align: right;
-                border-left: 2px solid red;
-                border-top-left-radius: 10px
-            }
-        }
-
-        @media (min-width:1920px) {
-            .disclaimer {
-                width: 60%
-            }
-        }
-    </style>
 </body>
 
 
@@ -294,3 +250,5 @@
 </head>
 
 </html>
+
+

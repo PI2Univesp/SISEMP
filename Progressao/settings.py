@@ -14,8 +14,6 @@ from pathlib import Path
 
 import os
 
-import psycopg2 
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -81,21 +79,11 @@ WSGI_APPLICATION = 'Progressao.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'db.sqlite3',
-    # }
-
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'de874qgpim8kg1',
-        'USER': 'zcssdletmyznxc',
-        'PASSWORD': 'b88b81d4f415211fb5d2226f92ac0ea5cac75ebc78975471a44ef49452f22841',
-        'HOST': 'ec2-52-6-29-180.compute-1.amazonaws.com',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 
 # Password validation

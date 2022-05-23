@@ -9,10 +9,7 @@ connection_db = psycopg2.connect(
 
 action_db = connection_db.cursor()
 
-# sql = 'select *  from cliente'
-sql = 'select *  from cadastros_CadastrarPessoa'
-sql = 'select *  from cadastros_CadastrarAtendimento'
-
+sql = 'select *  from cliente'
 
 action_db.execute(sql)
 
