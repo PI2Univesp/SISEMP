@@ -24,7 +24,7 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">SISEMP</a>
+            <a class="navbar-brand" href="{% url 'home' %}">SISEMP</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -36,7 +36,7 @@
                         <a class="nav-link" aria-current="page" href="{% url 'home' %}">Página Principal</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="{% url 'consultaPessoa' %}">Pessoas</a>
+                        <a class="nav-link active" href="{% url 'listar-pessoa' %}">Pessoas</a>
 
                     </li>
                     <li class="nav-item dropdown">
@@ -45,8 +45,8 @@
                             Atendimentos
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="{% url 'consultaAtendimento' %}">Consultar</a></li>
-                            <li><a class="dropdown-item" href="{% url 'cadastraAtendimento' %}">Cadastrar</a></li>
+                            <li><a class="dropdown-item" href="{% url 'listar-atendimento' %}">Consultar</a></li>
+                            <li><a class="dropdown-item" href="{% url 'cadastrar-atendimento' %}">Cadastrar</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -126,7 +126,7 @@
 
 
                             <hr class="mb-4">
-                            <form action="{% url 'cadastraPessoa' %}">
+                            <form action="{% url 'cadastrar-pessoa' %}">
                                 <button class="btn btn-primary btn-lg btn-block" type="submit">Cadastrar</button>
                             </form>
                         </div>

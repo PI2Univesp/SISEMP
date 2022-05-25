@@ -36,7 +36,7 @@
                         <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Página Principal</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'consultaPessoa' %}">Pessoas</a>
+                        <a class="nav-link" href="{% url 'listar-pessoa' %}">Pessoas</a>
 
                     </li>
                     <li class="nav-item dropdown">
@@ -45,8 +45,8 @@
                             Atendimentos
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="{% url 'consultaAtendimento' %}">Consultar</a></li>
-                            <li><a class="dropdown-item" href="{% url 'cadastraAtendimento' %}">Cadastrar</a></li>
+                            <li><a class="dropdown-item" href="{% url 'listar-atendimento' %}">Consultar</a></li>
+                            <li><a class="dropdown-item" href="{% url 'cadastrar-atendimento' %}">Cadastrar</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
