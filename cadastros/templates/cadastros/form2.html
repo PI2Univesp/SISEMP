@@ -1,4 +1,5 @@
 {% load static %}
+{% load crispy_forms_tags %}
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -82,7 +83,8 @@
                             <form action="" method="POST">
                                 {% csrf_token %}
 
-                                {{form.as_p}}
+                                {{ form|crispy }}
+                                
                                 <button class="btn btn-primary btn-lg btn-block" type="submit">Cadastrar</button>
                             </form>
                             </form>
