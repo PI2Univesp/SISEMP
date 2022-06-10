@@ -51,8 +51,27 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/sobre">Sobre</a>
-                    </li>
+                    </li>           
                 </ul>
+                <!--
+                    <a class="navbar-brand" aria-current="page">Rio Claro, {{ apiData.results.date }}, {{ apiData.results.temp }} °C, UR
+                        {{apiData.results.humidity }} %, Previsão: {{apiData.results.description }} </a> 
+                -->
+
+                        <li class="navbar-brand" style="display: block;">
+                            <span class="ddSimb"></span>
+                            <a title="Rio Claro">{{ apiData.results.city_name }}, </a>
+                            <span class="ddTemp"><span class="cMax changeUnitT" data="25.48|0|">Temperatura: {{ apiData.results.temp }} °C / </span> 
+                                <i class="fas fa-temperature-high"></i>
+                            <span class="cMin changeUnitT"
+                                    data="15.33|0|">UR: {{apiData.results.humidity }} %</span></span><span class="icon-coor papelera"></span><span class="icon-coor corBlanco"
+                                style=""></span>
+                            <span class="icon-coor gps"></span>
+                            <span class="icons-svg acfav iconS"></span>
+                        </li>
+                  
+
+            
 
             </div>
         </div>
@@ -83,6 +102,7 @@
 
         
                 </p>
+
 
                 <body class="bg-light" cz-shortcut-listen="true">
 

@@ -2,9 +2,9 @@ from django.db import models
 
 # Create your models here.
 class CadastrarPessoa(models.Model):
-    data = models.DateField()
-    cpf = models.IntegerField()
     nome = models.CharField(max_length=150)
+    cpf = models.IntegerField()
+    data = models.DateField(verbose_name="Data de Nascimento")
     email = models.CharField(max_length=150)
     telefone = models.IntegerField()
     cep = models.IntegerField()
@@ -14,9 +14,11 @@ class CadastrarPessoa(models.Model):
     def __str__(self):
         return "{}".format(self.cpf)
 
+
 class CadastrarAtendimento(models.Model):
     
     cadastrarpessoa = models.ForeignKey(CadastrarPessoa, on_delete=models.PROTECT,verbose_name="CPF")
+    
     
 
     servico_escolhas = (

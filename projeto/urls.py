@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app.views import home, sobre, formPessoa, create, consultaPessoa,formAtendimento, create2, consultaAtendimento
+from app import views #adicionado Carol 29-05
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,5 +28,5 @@ urlpatterns = [
     path('consulta-pessoa',consultaPessoa,name="consulta-pessoa"),
     path('cadastrar-atendimento/', formAtendimento, name="cadastrar-atendimento"),
     path('create2/', create2, name="create2"),
-    path('consulta-atendimento/',consultaAtendimento,name="consulta-atendimento")
+    path('consulta-atendimento/',consultaAtendimento,name="consulta-atendimento"),
 ]

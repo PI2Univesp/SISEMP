@@ -5,7 +5,7 @@ from app.models import CadastrarPessoa, CadastrarAtendimento
 class PessoaForm(ModelForm):
     class Meta:
         model = CadastrarPessoa
-        fields = ['data','cpf','nome','email','telefone','cep','cidade','estado']
+        fields = ['nome','cpf','data','email','telefone','cep','cidade','estado']
 
 class AtendimentoForm(ModelForm):
     class Meta:

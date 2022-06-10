@@ -1,9 +1,16 @@
 from django.shortcuts import render,redirect
 from app.forms import PessoaForm, AtendimentoForm
 from app.models import CadastrarPessoa, CadastrarAtendimento
+import requests
+
 
 def home(request):
-    return render(request, 'home.html')
+    apiData = {}
+    url = 'https://api.hgbrasil.com/weather?key=e390abc2'
+    response = requests.get(url)
+    apiData = response.json()
+    return render(request, 'home.html', {'apiData': apiData})
+    #return render(request, 'home.html')
 
 
 def sobre(request):
@@ -46,7 +53,7 @@ def consultaAtendimento(request):
     search = request.GET.get('search')
     if search:
         
-        data['db'] = (CadastrarAtendimento.objects.filter(atendente__icontains=search) or CadastrarAtendimento.objects.filter(data__icontains=search))
+        data['db'] = (CadastrarAtendimento.objects.filter(atendente__icontains=search) or CadastrarAtendimento.objects.filter(data__icontains=search) or CadastrarAtendimento.objects.filter(servico__icontains=search))
     else:
         data['db'] = CadastrarAtendimento.objects.all
     return render(request,'consultaAtendimento.html',data)
@@ -58,4 +65,24 @@ def create2(request):
         form.save()
         return redirect("consulta-atendimento")
 
+"""" 
+def testeApi(request):
+    response = requests.get('https://viacep.com.br/ws/13401734/json/')
+    apiData = response.json()
+    return render(request, 'testeApi.html', {
+        'logradouro': apiData['logradouro'],
+        'complemento': apiData['complemento'],
+        'bairro': apiData['bairro'],
+        'localidade': apiData['localidade'],
+        'uf': apiData['uf']
+    })
 
+def testeApi(request):
+    apiData = {}
+    if 'cep' in request.GET:
+        cep = request.GET['cep']
+        url = 'https://viacep.com.br/ws/%s/json/' % cep
+        response = requests.get(url)
+        apiData = response.json()
+    return render(request, 'testeApi.html', {'apiData': apiData})
+"""

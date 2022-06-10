@@ -1,0 +1,31 @@
+<!--adicionado Carol 29-05-->
+
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>RESTful APIs Example</title>
+    <style type="text/css">
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>API CEP - Teste</h2>
+    <form method="get">
+        <input type="text" name="cep">
+        <button type="submit">busca cep</button>
+    </form>
+    {% if apiData %}
+    <p>O cep <strong>{{ apiData.cep }}</strong> retorna da API o logradouro <strong>{{ apiData.logradouro }}</strong>, o complemento <strong>{{ apiData.complemento }}</strong>, o bairro <strong>{{ apiData.bairro }}</strong>,
+        a localidade <strong>{{ apiData.localidade }}</strong> e a UF <strong>{{ apiData.uf }}</strong>.</p>
+    {% endif %}
+</body>
+
+</html>
+
