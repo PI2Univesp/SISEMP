@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Acesso</title>
+
+
+
+    <link rel='stylesheet' href="css/style2.css">
+</head>
+
+<body>
+    <form class="form" action="">
+
+        <div class="card">
+
+            <div class="card-top">
+
+                <img class="imglogin" src="img/teste2.png" alt="">
+
+                <h2 class="title">Sistema para Gerenciamento de Atendimentos(SISEMP)</h2>
+                <p>Acesso Usuário</p>
+            </div>
+
+
+
+            <div class="card-group">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Digite seu email" required id="login">
+            </div>
+
+            <div class="card-group">
+                <label>Senha</label>
+                <input type="password" name="senha" placeholder="Digite sua senha" required id="senha">
+            </div>
+
+            <div class="card-group">
+                <label> <input type="checkbox"> Lembre-me </label>
+            </div>
+
+            <div class="card-group btn">
+                <button type="submit" onclick="logar(); return false"> CONECTAR </button>
+
+
+            </div>
+
+
+            <div class="card-top">
+
+                <a href="https://www.rioclaro.sp.gov.br/"><img class="imgrc" src="https://www.rioclaro.sp.gov.br/images/logo-topo-2021.jpg" alt=""></a>
+
+            </div>
+
+
+
+
+
+        </div>
+    </form>
+
+
+
+    <script>
+        function logar() {
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if (login == "admin@gmail.com" && senha == "admin") {
+                location.href = "/home";
+            } else {
+                alert("Login ou senha Incorreta");
+            }
+
+
+
+
+        }
+    </script>
+
+</body>
+
+</html>

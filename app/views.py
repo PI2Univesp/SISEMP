@@ -4,9 +4,14 @@ from app.models import CadastrarPessoa, CadastrarAtendimento
 import requests
 
 
+def login(request):
+    return render(request, 'login.html')
+
 def home(request):
     apiData = {}
-    url = 'https://api.hgbrasil.com/weather?key=e390abc2'
+    url = 'https://api.hgbrasil.com/weather?woeid=455905'
+
+   
     response = requests.get(url)
     apiData = response.json()
     return render(request, 'home.html', {'apiData': apiData})

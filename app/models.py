@@ -22,7 +22,6 @@ class CadastrarAtendimento(models.Model):
     
 
     servico_escolhas = (
-        ("IDServiço", "IDServiço"),
         ("Orientação para MEI", "Orientação para MEI"),
         ("Consulta prévia de Localização", "Consulta prévia de Localização"),
         ("Registro, alteração e baixa do MEI", "Registro, alteração e baixa do MEI"),
