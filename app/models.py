@@ -3,11 +3,11 @@ from django.db import models
 # Create your models here.
 class CadastrarPessoa(models.Model):
     nome = models.CharField(max_length=150)
-    cpf = models.IntegerField()
+    cpf = models.BigIntegerField()
     data = models.DateField(verbose_name="Data de Nascimento")
     email = models.CharField(max_length=150)
-    telefone = models.IntegerField()
-    cep = models.IntegerField()
+    telefone = models.BigIntegerField()
+    cep = models.BigIntegerField()
     cidade = models.CharField(max_length=150)
     estado = models.CharField(max_length=150)
 
