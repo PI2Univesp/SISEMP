@@ -1,0 +1,332 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Teste de Regressão SISEMP",
+    "children" : [ {
+      "name" : "Logando na Pagina",
+      "uid" : "6a5b486c9279d5de",
+      "parentUid" : "63b1d6e4d72d989e16d7be09ac9d0028",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656535153869,
+        "stop" : 1656535158945,
+        "duration" : 5076
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Validar Texto Pagina Inicial",
+      "uid" : "1267d6f97468ab77",
+      "parentUid" : "63b1d6e4d72d989e16d7be09ac9d0028",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656535172419,
+        "stop" : 1656535174197,
+        "duration" : 1778
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Validar API Navbar - São Paulo, Temperatura",
+      "uid" : "180df5ac4e85353",
+      "parentUid" : "63b1d6e4d72d989e16d7be09ac9d0028",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656535174222,
+        "stop" : 1656535175666,
+        "duration" : 1444
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Validar Opções NavBar",
+      "uid" : "e117b5afcec78bf9",
+      "parentUid" : "63b1d6e4d72d989e16d7be09ac9d0028",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656535175698,
+        "stop" : 1656535177736,
+        "duration" : 2038
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Validar Link Noticia 1",
+      "uid" : "4d3c153321f82697",
+      "parentUid" : "63b1d6e4d72d989e16d7be09ac9d0028",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656535177790,
+        "stop" : 1656535179234,
+        "duration" : 1444
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Validar Link Noticia 2",
+      "uid" : "373b8689f02a6dd0",
+      "parentUid" : "63b1d6e4d72d989e16d7be09ac9d0028",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656535179262,
+        "stop" : 1656535180560,
+        "duration" : 1298
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Validar Link Noticia 3",
+      "uid" : "cbe44c7b359d79e4",
+      "parentUid" : "63b1d6e4d72d989e16d7be09ac9d0028",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656535180583,
+        "stop" : 1656535182057,
+        "duration" : 1474
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Validar Cabeçalho Tabelda - Consultar Pessoa",
+      "uid" : "a9ebe84289fb9afe",
+      "parentUid" : "63b1d6e4d72d989e16d7be09ac9d0028",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656535182074,
+        "stop" : 1656535184759,
+        "duration" : 2685
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Pesquisando Pessoa Não Cadastrada",
+      "uid" : "ff7636f0e3f40ffd",
+      "parentUid" : "63b1d6e4d72d989e16d7be09ac9d0028",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656535184794,
+        "stop" : 1656535188502,
+        "duration" : 3708
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Pesquisando Pessoa Cadastrada",
+      "uid" : "60d2835e42d72d28",
+      "parentUid" : "63b1d6e4d72d989e16d7be09ac9d0028",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656535188520,
+        "stop" : 1656535192382,
+        "duration" : 3862
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Cadastrar Pessoa",
+      "uid" : "8408b57f60b7dde2",
+      "parentUid" : "63b1d6e4d72d989e16d7be09ac9d0028",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656535192400,
+        "stop" : 1656535199977,
+        "duration" : 7577
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Validando Cadastro realizado - Na tabela",
+      "uid" : "b13e814f10ab0933",
+      "parentUid" : "63b1d6e4d72d989e16d7be09ac9d0028",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656535199992,
+        "stop" : 1656535202584,
+        "duration" : 2592
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Cadastrar Atendimento",
+      "uid" : "228dd9e87403f4e6",
+      "parentUid" : "63b1d6e4d72d989e16d7be09ac9d0028",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656535202617,
+        "stop" : 1656535207631,
+        "duration" : 5014
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Validar Atendimento Cadastrado",
+      "uid" : "8a8d879d1fed102a",
+      "parentUid" : "63b1d6e4d72d989e16d7be09ac9d0028",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656535207637,
+        "stop" : 1656535210086,
+        "duration" : 2449
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Validar Cabeçalho Consulta Atendimento",
+      "uid" : "262f87b1bda3ee03",
+      "parentUid" : "63b1d6e4d72d989e16d7be09ac9d0028",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656535210098,
+        "stop" : 1656535212574,
+        "duration" : 2476
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Validar Texto Tela Sobre",
+      "uid" : "9e5b173fbc558f7c",
+      "parentUid" : "63b1d6e4d72d989e16d7be09ac9d0028",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656535212588,
+        "stop" : 1656535214692,
+        "duration" : 2104
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Validar Link Noticia 1 Tela Sobre",
+      "uid" : "1e2868b8964be441",
+      "parentUid" : "63b1d6e4d72d989e16d7be09ac9d0028",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656535214704,
+        "stop" : 1656535216704,
+        "duration" : 2000
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Validar Link Noticia 2 Tela Sobre",
+      "uid" : "2640e02a44b5e8bc",
+      "parentUid" : "63b1d6e4d72d989e16d7be09ac9d0028",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656535216708,
+        "stop" : 1656535219047,
+        "duration" : 2339
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Validar Link Noticia 3 Tela Sobre",
+      "uid" : "dc4b011927993592",
+      "parentUid" : "63b1d6e4d72d989e16d7be09ac9d0028",
+      "status" : "passed",
+      "time" : {
+        "start" : 1656535219062,
+        "stop" : 1656535221393,
+        "duration" : 2331
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "63b1d6e4d72d989e16d7be09ac9d0028"
+  } ]
+}

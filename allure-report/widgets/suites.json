@@ -1,0 +1,15 @@
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "63b1d6e4d72d989e16d7be09ac9d0028",
+    "name" : "Teste de Regressão SISEMP",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 19,
+      "unknown" : 0,
+      "total" : 19
+    }
+  } ]
+}

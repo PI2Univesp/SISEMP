@@ -1,0 +1,205 @@
+{
+  "uid" : "cbe44c7b359d79e4",
+  "name" : "Validar Link Noticia 3",
+  "fullName" : "Validar Link Noticia 3",
+  "historyId" : "9840284d61dbfd32969a3f7e1d3031e9",
+  "time" : {
+    "start" : 1656535180583,
+    "stop" : 1656535182057,
+    "duration" : 1474
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1656535180584,
+        "stop" : 1656535182013,
+        "duration" : 1429
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "goToPage",
+        "time" : {
+          "start" : 1656535180626,
+          "stop" : 1656535182013,
+          "duration" : 1387
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "viewport 1920, 1080",
+          "time" : {
+            "start" : 1656535180626,
+            "stop" : 1656535180630,
+            "duration" : 4
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "visit /",
+          "time" : {
+            "start" : 1656535180630,
+            "stop" : 1656535182013,
+            "duration" : 1383
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "get div[class=\"col-md-4\"]",
+      "time" : {
+        "start" : 1656535182015,
+        "stop" : 1656535182026,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "eq 0",
+      "time" : {
+        "start" : 1656535182026,
+        "stop" : 1656535182035,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **<div.col-md-4>** to contain **Notícias**",
+      "time" : {
+        "start" : 1656535182035,
+        "stop" : 1656535182035,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "contains a[href=\"https://imprensa.rioclaro.sp.gov.br/?p=41425\"], Ver detalhes",
+      "time" : {
+        "start" : 1656535182035,
+        "stop" : 1656535182045,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "get a[href=\"https://imprensa.rioclaro.sp.gov.br/?p=41425\"]",
+      "time" : {
+        "start" : 1656535182045,
+        "stop" : 1656535182057,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **<a.btn.btn-secondary>** to have attribute **href** with the value **https://imprensa.rioclaro.sp.gov.br/?p=41425**",
+      "time" : {
+        "start" : 1656535182056,
+        "stop" : 1656535182056,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "https://imprensa.rioclaro.sp.gov.br/?p=41425"
+      }, {
+        "name" : "expected",
+        "value" : "https://imprensa.rioclaro.sp.gov.br/?p=41425"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Teste de Regressão SISEMP"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cbe44c7b359d79e4.json",
+  "parameterValues" : [ ]
+}

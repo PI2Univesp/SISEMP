@@ -16,7 +16,7 @@ describe('Teste de Regressão SISEMP', () => {
     })
 
     it('Validar API Navbar - São Paulo, Temperatura', ()=>{
-        cy.contains('div[class="container-fluid"]', 'São Paulo, Temperatura')
+        cy.contains('div[class="container-fluid"]', 'Rio Claro, Temperatura')
     })
 
     it('Validar Opções NavBar', () => {
@@ -77,7 +77,7 @@ describe('Teste de Regressão SISEMP', () => {
     })
 
     it('Pesquisando Pessoa Cadastrada', ()=>{
-        const name = "cris" 
+        const name = "Arande Cristina" 
         cy.get('a[href="/consulta-pessoa"]').click()
         cy.get('input[id="search"]').click({force:true})
         cy.get('input[id="search"]').type(name)
@@ -100,7 +100,7 @@ describe('Teste de Regressão SISEMP', () => {
     })
 
     //Tela de Cadastra Atendimento 
-    const cpf = '44917421896'
+    const cpf = '4423695636'
     it('Cadastrar Atendimento', ()=>{
         cy.get('div[class="container-fluid"]').click({force:true})
         cy.get('a[href="/cadastrar-atendimento"]').click({force:true})

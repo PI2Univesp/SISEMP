@@ -1,0 +1,205 @@
+{
+  "uid" : "4d3c153321f82697",
+  "name" : "Validar Link Noticia 1",
+  "fullName" : "Validar Link Noticia 1",
+  "historyId" : "ceb063b54276c79ddeba723e326c1aaa",
+  "time" : {
+    "start" : 1656535177790,
+    "stop" : 1656535179234,
+    "duration" : 1444
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1656535177801,
+        "stop" : 1656535179142,
+        "duration" : 1341
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "goToPage",
+        "time" : {
+          "start" : 1656535177928,
+          "stop" : 1656535179141,
+          "duration" : 1213
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "viewport 1920, 1080",
+          "time" : {
+            "start" : 1656535177929,
+            "stop" : 1656535177934,
+            "duration" : 5
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        }, {
+          "name" : "visit /",
+          "time" : {
+            "start" : 1656535177934,
+            "stop" : 1656535179141,
+            "duration" : 1207
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "shouldDisplayMessage" : false,
+          "attachmentsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "hasContent" : true,
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "get div[class=\"col-md-4\"]",
+      "time" : {
+        "start" : 1656535179146,
+        "stop" : 1656535179155,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "eq 0",
+      "time" : {
+        "start" : 1656535179155,
+        "stop" : 1656535179178,
+        "duration" : 23
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **<div.col-md-4>** to contain **Notícias**",
+      "time" : {
+        "start" : 1656535179178,
+        "stop" : 1656535179178,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "get a[href=\"https://www.gruporioclarosp.com.br/2021/06/21/prefeito-gustavo-perissinotto-inaugura-sala-do-empreendedor/\"]",
+      "time" : {
+        "start" : 1656535179178,
+        "stop" : 1656535179232,
+        "duration" : 54
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **<a.btn.btn-secondary>** to contain **Ver detalhes**",
+      "time" : {
+        "start" : 1656535179232,
+        "stop" : 1656535179232,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "assert expected **<a.btn.btn-secondary>** to have attribute **href** with the value **https://www.gruporioclarosp.com.br/2021/06/21/prefeito-gustavo-perissinotto-inaugura-sala-do-empreendedor/**",
+      "time" : {
+        "start" : 1656535179232,
+        "stop" : 1656535179232,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "https://www.gruporioclarosp.com.br/2021/06/21/prefeito-gustavo-perissinotto-inaugura-sala-do-empreendedor/"
+      }, {
+        "name" : "expected",
+        "value" : "https://www.gruporioclarosp.com.br/2021/06/21/prefeito-gustavo-perissinotto-inaugura-sala-do-empreendedor/"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Teste de Regressão SISEMP"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4d3c153321f82697.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,191 @@
+[ {
+  "uid" : "4d3c153321f82697",
+  "name" : "Validar Link Noticia 1",
+  "time" : {
+    "start" : 1656535177790,
+    "stop" : 1656535179234,
+    "duration" : 1444
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6a5b486c9279d5de",
+  "name" : "Logando na Pagina",
+  "time" : {
+    "start" : 1656535153869,
+    "stop" : 1656535158945,
+    "duration" : 5076
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e117b5afcec78bf9",
+  "name" : "Validar Opções NavBar",
+  "time" : {
+    "start" : 1656535175698,
+    "stop" : 1656535177736,
+    "duration" : 2038
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "373b8689f02a6dd0",
+  "name" : "Validar Link Noticia 2",
+  "time" : {
+    "start" : 1656535179262,
+    "stop" : 1656535180560,
+    "duration" : 1298
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a9ebe84289fb9afe",
+  "name" : "Validar Cabeçalho Tabelda - Consultar Pessoa",
+  "time" : {
+    "start" : 1656535182074,
+    "stop" : 1656535184759,
+    "duration" : 2685
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "60d2835e42d72d28",
+  "name" : "Pesquisando Pessoa Cadastrada",
+  "time" : {
+    "start" : 1656535188520,
+    "stop" : 1656535192382,
+    "duration" : 3862
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1267d6f97468ab77",
+  "name" : "Validar Texto Pagina Inicial",
+  "time" : {
+    "start" : 1656535172419,
+    "stop" : 1656535174197,
+    "duration" : 1778
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "262f87b1bda3ee03",
+  "name" : "Validar Cabeçalho Consulta Atendimento",
+  "time" : {
+    "start" : 1656535210098,
+    "stop" : 1656535212574,
+    "duration" : 2476
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "228dd9e87403f4e6",
+  "name" : "Cadastrar Atendimento",
+  "time" : {
+    "start" : 1656535202617,
+    "stop" : 1656535207631,
+    "duration" : 5014
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cbe44c7b359d79e4",
+  "name" : "Validar Link Noticia 3",
+  "time" : {
+    "start" : 1656535180583,
+    "stop" : 1656535182057,
+    "duration" : 1474
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9e5b173fbc558f7c",
+  "name" : "Validar Texto Tela Sobre",
+  "time" : {
+    "start" : 1656535212588,
+    "stop" : 1656535214692,
+    "duration" : 2104
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b13e814f10ab0933",
+  "name" : "Validando Cadastro realizado - Na tabela",
+  "time" : {
+    "start" : 1656535199992,
+    "stop" : 1656535202584,
+    "duration" : 2592
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ff7636f0e3f40ffd",
+  "name" : "Pesquisando Pessoa Não Cadastrada",
+  "time" : {
+    "start" : 1656535184794,
+    "stop" : 1656535188502,
+    "duration" : 3708
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2640e02a44b5e8bc",
+  "name" : "Validar Link Noticia 2 Tela Sobre",
+  "time" : {
+    "start" : 1656535216708,
+    "stop" : 1656535219047,
+    "duration" : 2339
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8408b57f60b7dde2",
+  "name" : "Cadastrar Pessoa",
+  "time" : {
+    "start" : 1656535192400,
+    "stop" : 1656535199977,
+    "duration" : 7577
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1e2868b8964be441",
+  "name" : "Validar Link Noticia 1 Tela Sobre",
+  "time" : {
+    "start" : 1656535214704,
+    "stop" : 1656535216704,
+    "duration" : 2000
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "180df5ac4e85353",
+  "name" : "Validar API Navbar - São Paulo, Temperatura",
+  "time" : {
+    "start" : 1656535174222,
+    "stop" : 1656535175666,
+    "duration" : 1444
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dc4b011927993592",
+  "name" : "Validar Link Noticia 3 Tela Sobre",
+  "time" : {
+    "start" : 1656535219062,
+    "stop" : 1656535221393,
+    "duration" : 2331
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8a8d879d1fed102a",
+  "name" : "Validar Atendimento Cadastrado",
+  "time" : {
+    "start" : 1656535207637,
+    "stop" : 1656535210086,
+    "duration" : 2449
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
